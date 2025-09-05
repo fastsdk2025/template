@@ -1,12 +1,12 @@
 import { Command } from "commander"
 
-const {{name}}Command = new Command()
+const {{camelCase name}}Command = new Command()
 
-{{name}}Command
-	.name("{{name}}")
-	.description("{{name}} command")
+{{camelCase name}}Command
+	.name("{{kebabCase name}}")
+	.description("{{kebabCase name}} command")
 	.action(() => {
-		console.log("{{name}} command")
+		console.log("{{kebabCase name}} command")
 	})
 
-export default {{name}}Command
+export default {{camelCase name}}Command
