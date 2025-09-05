@@ -1,12 +1,12 @@
 import { Command } from "commander"
 
-const templateCommand = new Command()
+const {{name}}Command = new Command()
 
-templateCommand
-	.name("template")
-	.description("template command")
+{{name}}Command
+	.name("{{name}}")
+	.description("{{name}} command")
 	.action(() => {
-		console.log("template command")
+		console.log("{{name}} command")
 	})
 
-export default templateCommand
+export default {{name}}Command

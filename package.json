@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "{{package_name}}",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
