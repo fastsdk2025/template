@@ -1,14 +1,30 @@
 {
-  "name": "{{package_name}}",
+  "name": "@fastsdk2025/{{package_name}}",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "registry": "https://github.com/fastsdk2025/{{package_name}}",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "dev": "tsup --sourcemap",
     "watch": "tsup --sourcemap --watch",
     "build": "tsup --minify"
-	},
-  "keywords": [],
+  },
+  "keywords": [
+    "{{name}}",
+    "fast-plugin"
+  ],
+  "author": "tuiu <13719283454@163.com>",
+  "license": "MIT",
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
     "@types/node": "^24.3.1",
